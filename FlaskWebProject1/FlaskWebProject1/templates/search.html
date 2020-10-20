@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <form action="/" method="POST">
+  <div class="d-flex justify-content-center h-100">
+    <div class="search">
+      <input type="text" class="search-input" placeholder="Enter a movie..." name="movie">
+      <button type="submit" class="search-box">Search</button>
+    </div>
+  </div>
+  </form>
+</div>
+
+{% endblock content %}

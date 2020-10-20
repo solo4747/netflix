@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+	<!-- Indicators -->
+	<ul class="carousel-indicators">
+	  <li data-target="#demo" data-slide-to="0" class="active"></li>
+	  <li data-target="#demo" data-slide-to="1"></li>
+	  <li data-target="#demo" data-slide-to="2"></li>
+	</ul>
+  
+	<!-- The slideshow -->
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<section class="home-about-area pt-120">
+			<div class="container">
+				<div class="pt-5">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6 col-md-6 home-about-left">
+						<iframe class="embed-responsive-item" src="{{ trailer[0] }}" width="500" height="300"></iframe>
+					</div>
+					<div class="col-lg-5 col-md-6 home-about-right">
+						<h6>Recommendation</h6>
+						<h1 class="text-uppercase">{{ title[0] }}</h1>
+						<p> <b>Director : </b> {{ directors[0] }}</p>
+						<p> <b>Actors : </b> {{ actors[0] }}</p>
+						<p> <b>Summary : </b> {{ resume[0] }}</p>
+						<!-- <p> <b>Rating : </b> {{ ratings[0] }} -->
+						<a class="primary-btn text-uppercase" href="#demo" data-slide="next">Other choice</a>
+					</div>
+				</div>
+				</div>
+			</div>	
+		</section>
+	  </div>
+	  <div class="carousel-item">
+		<section class="home-about-area pt-120">
+			<div class="container">
+				<div class="pt-5">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6 col-md-6 home-about-left">
+						<iframe class="embed-responsive-item" src="{{ trailer[1] }}" width="500" height="300"></iframe>
+					</div>
+					<div class="col-lg-5 col-md-6 home-about-right">
+						<h6>Recommendation</h6>
+						<h1 class="text-uppercase">{{ title[1] }}</h1>
+						<p> <b>Director : </b> {{ directors[1] }}</p>
+						<p> <b>Actors : </b> {{ actors[1] }}</p>
+						<p> <b>Summary : </b> {{ resume[1] }}</p>
+						<a class="primary-btn text-uppercase" href="#demo" data-slide="next">Other choice</a>
+					</div>
+				</div>
+				</div>
+			</div>	
+		</section>
+	  </div>
+	  <div class="carousel-item">
+		<section class="home-about-area pt-120">
+			<div class="container">
+				<div class="pt-5">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6 col-md-6 home-about-left">
+						<iframe class="embed-responsive-item" src="{{ trailer[2] }}" width="500" height="300"></iframe>
+					</div>
+					<div class="col-lg-5 col-md-6 home-about-right">
+						<h6>Recommendation</h6>
+						<h1 class="text-uppercase">{{ title[2] }}</h1>
+						<p> <b>Director : </b> {{ directors[2] }}</p>
+						<p> <b>Actors : </b> {{ actors[2] }}</p>
+						<p> <b>Summary : </b> {{ resume[2] }}</p>
+						<a class="primary-btn text-uppercase" href="#demo" data-slide="next">Other choice</a>
+					</div>
+				</div>
+				</div>
+			</div>	
+		</section>
+	  </div>
+	  <div class="carousel-item">
+		<section class="home-about-area pt-120">
+			<div class="container">
+				<div class="pt-5">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6 col-md-6 home-about-left">
+						<iframe class="embed-responsive-item" src="{{ trailer[3] }}" width="500" height="300"></iframe>
+					</div>
+					<div class="col-lg-5 col-md-6 home-about-right">
+						<h6>Recommendation</h6>
+						<h1 class="text-uppercase">{{ title[3] }}</h1>
+						<p> <b>Director : </b> {{ directors[3] }}</p>
+						<p> <b>Actors : </b> {{ actors[3] }}</p>
+						<p> <b>Summary : </b> {{ resume[3] }}</p>
+						<a class="primary-btn text-uppercase" href="#demo" data-slide="next">Other choice</a>
+					</div>
+				</div>
+				</div>
+			</div>	
+		</section>
+	  </div>
+	  <div class="carousel-item">
+		<section class="home-about-area pt-120">
+			<div class="container">
+				<div class="pt-5">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-6 col-md-6 home-about-left">
+						<iframe class="embed-responsive-item" src="{{ trailer[4] }}" width="500" height="300"></iframe>
+					</div>
+					<div class="col-lg-5 col-md-6 home-about-right">
+						<h6>Recommendation</h6>
+						<h1 class="text-uppercase">{{ title[4] }}</h1>
+						<p> <b>Director : </b> {{ directors[4] }}</p>
+						<p> <b>Actors : </b> {{ actors[4] }}</p>
+						<p> <b>Summary : </b> {{ resume[4] }}</p>
+						<a class="primary-btn text-uppercase" href="#demo" data-slide="next">Other choice</a>
+					</div>
+				</div>
+				</div>
+			</div>	
+		</section>
+	  </div>
+	</div>
+  
+	<!-- Left and right controls
+	<a class="carousel-control-prev" href="#demo" data-slide="prev">
+	  <span class="carousel-control-prev-icon"></span>
+	</a>
+	<a class="carousel-control-next" href="#demo" data-slide="next">
+	  <span class="carousel-control-next-icon"></span>
+	</a> -->
+  
+  </div>
+
+{% endblock content %}
